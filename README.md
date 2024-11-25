@@ -1,3 +1,11 @@
+# To Deploy
+
+* cd to `application/apps/remix-app`
+* Run `npm i`
+* Run `npm run build:prod`
+* cd to project root
+* run `npx cdk deploy remixStack "remixStack/*"` 
+
 # Welcome to your CDK TypeScript project
 
 This is a blank project for CDK development with TypeScript.
