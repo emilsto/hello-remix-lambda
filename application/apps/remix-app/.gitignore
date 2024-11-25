@@ -1,0 +1,14 @@
+node_modules
+
+/.cache
+/public/build
+/build
+/public/static
+/server/index.mjs
+/server/index.mjs.map
+/server/metafile.*
+/server/version.txt
+preferences.arc
+sam.json
+sam.yaml
+.env

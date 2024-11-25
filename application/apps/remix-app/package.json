@@ -1,0 +1,52 @@
+{
+	"name": "self-purchase-portal",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"build": "remix build",
+		"build:prod": "export NODE_ENV=production; npm run build",
+		"dev": "cross-env NODE_ENV=development remix dev --manual -c \"arc sandbox -e testing\"",
+		"lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+		"start": "cross-env NODE_ENV=production arc sandbox",
+		"typecheck": "tsc"
+	},
+	"dependencies": {
+		"@remix-run/architect": "^2.12.1",
+		"@remix-run/css-bundle": "^2.12.1",
+		"@remix-run/node": "^2.12.1",
+		"@remix-run/react": "^2.12.1",
+		"@types/react-simple-maps": "^3.0.6",
+		"@types/react-transition-group": "^4.4.11",
+		"cross-env": "^7.0.3",
+		"isbot": "^4.1.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-icons": "^5.3.0",
+		"react-simple-maps": "^3.0.0",
+		"react-transition-group": "^4.4.5",
+		"source-map-support": "^0.5.21"
+	},
+	"devDependencies": {
+		"@architect/architect": "^10.12.1",
+		"@remix-run/dev": "^2.12.1",
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
+		"@types/source-map-support": "^0.5.6",
+		"@typescript-eslint/eslint-plugin": "^6.7.4",
+		"@typescript-eslint/parser": "^6.7.4",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^8.38.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.28.1",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"postcss": "^8.4.47",
+		"tailwindcss": "^3.4.13",
+		"typescript": "^5.1.6"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
